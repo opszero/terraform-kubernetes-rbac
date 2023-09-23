@@ -3,7 +3,7 @@ resource "kubernetes_role" "this" {
     name      = "default:ad-eks-admins"
     namespace = "kube-system"
     labels = {
-      sso_role = "eks-admins"
+      role = "eks-admins"
     }
   }
 
